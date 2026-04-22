@@ -8,6 +8,10 @@ image {
   display: block;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -20,6 +24,11 @@ image {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-inline: 0.5rem;
+}
+
+.search {
+  display: flex;
+  gap: 0.25rem;
 }
 
 .search__input {
@@ -45,6 +54,7 @@ image {
   gap: 0.25rem;
   border: 1px solid #000;
   padding: 0.5rem;
+  flex: 1;
 }
 
 .graph {
@@ -55,6 +65,7 @@ image {
 .graph__image {
   width: 100%;
   height: auto;
+  max-height: 15rem;
 }
 
 .activity {
@@ -75,4 +86,13 @@ image {
 .activity-card__icon {
   border: 1px solid black;
   border-radius: 50%;
+}
+
+@media screen and (min-width: 426px) {
+  .info-cards {
+    flex-direction: row;
+  }
+  .search__input {
+    display: block;
+  }
 }
