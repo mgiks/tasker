@@ -26,7 +26,10 @@ image {
   display: none;
 }
 
-.main__section {
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   padding: 0.5rem;
 }
 
@@ -34,7 +37,6 @@ image {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 0.5rem;
 }
 
 .info-card {
@@ -45,7 +47,32 @@ image {
   padding: 0.5rem;
 }
 
+.graph {
+  padding: 0.5rem;
+  border: 1px solid #000;
+}
+
 .graph__image {
   width: 100%;
   height: auto;
+}
+
+.activity {
+  padding: 0.5rem;
+  border: 1px solid #000;
+}
+
+.activity__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.activity-card {
+  border-bottom: 1px solid black;
+}
+
+.activity-card__icon {
+  border: 1px solid black;
+  border-radius: 50%;
 }
