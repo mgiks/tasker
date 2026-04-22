@@ -26,6 +26,10 @@ image {
   display: none;
 }
 
+.main__section {
+  padding: 0.5rem;
+}
+
 .info-cards {
   display: flex;
   flex-direction: column;
@@ -39,4 +43,9 @@ image {
   gap: 0.25rem;
   border: 1px solid #000;
   padding: 0.5rem;
+}
+
+.graph__image {
+  width: 100%;
+  height: auto;
 }
