@@ -12,7 +12,7 @@
   </head>
   <body class="page">
     <header class="header">
-      <div>
+      <div class="mobile-corner">
         <i class="fas fa-bars"></i>
         <span>Username</span>
       </div>
@@ -23,6 +23,41 @@
         </div>
       </nav>
     </header>
+
+    <aside class="sidebar">
+      <div class="user-info">
+        <div class="user-info__icon">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="user-info__text">
+          <p>Username</p>
+          <p>Position</p>
+        </div>
+      </div>
+
+      <div class="sidebar__links">
+        <a class="sidebar__link">
+          <i class="fas fa-arrow-trend-up"></i>
+          Dashboard
+        </a>
+        <a class="sidebar__link">
+          <i class="fas fa-clipboard"></i>
+          Tasks
+        </a>
+        <a class="sidebar__link">
+          <i class="fas fa-note-sticky"></i>
+          Board
+        </a>
+        <a class="sidebar__link">
+          <i class="fas fa-square-plus"></i>
+          Create Task
+        </a>
+        <a class="sidebar__link">
+          <i class="fas fa-gear"></i>
+          Settings
+        </a>
+      </div>
+    </aside>
 
     <main class="main">
       <section class="info-cards">
@@ -44,7 +79,7 @@
       </section>
 
       <section class="graph">
-        <h4 class="nowrap">Task Completion</h4>
+        <h4 class="nowrap">Task Completion <i>(Last 7 days)</i></h4>
         <img
           src="graph.png"
           alt="graph"

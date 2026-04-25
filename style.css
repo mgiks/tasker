@@ -15,7 +15,8 @@ image {
 .page {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
+  min-height: 100vh;
 }
 
 .header {
@@ -24,11 +25,15 @@ image {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-inline: 0.5rem;
+  grid-area: header;
 }
 
 .search {
   display: flex;
   gap: 0.25rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .search__input {
@@ -39,7 +44,17 @@ image {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 0.5rem;
+  padding-inline: 0.5rem;
+  grid-area: main;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: none;
+  flex-direction: column;
+  padding-top: 0.5rem;
+  padding-left: 1.5rem;
+  border-right: 1px solid black;
 }
 
 .info-cards {
@@ -94,5 +109,56 @@ image {
   }
   .search__input {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .page {
+    display: grid;
+    grid-template-areas:
+      "sidebar header header header header"
+      "sidebar main main main main";
+    align-content: stretch;
+    grid-template-rows: 1fr 12fr;
+    grid-template-columns: 15rem 1fr;
+  }
+
+  .sidebar {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-template-columns: 1fr;
+  }
+
+  .user-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.25rem;
+    grid-row: 1 /2;
+  }
+
+  .user-info__icon {
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .sidebar__links {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    grid-row: 2 / 3;
+  }
+
+  .sidebar__link:hover {
+    cursor: pointer;
+  }
+
+  .mobile-corner {
+    display: none;
   }
 }
