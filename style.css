@@ -26,6 +26,9 @@ image {
   padding-top: 0.5rem;
   padding-inline: 0.5rem;
   grid-area: header;
+  justify-self: center;
+  width: 100%;
+  max-width: 82rem;
 }
 
 .search {
@@ -46,6 +49,9 @@ image {
   gap: 1.5rem;
   padding-inline: 0.5rem;
   grid-area: main;
+  justify-self: center;
+  width: 100%;
+  max-width: 82rem;
 }
 
 .sidebar {
@@ -72,15 +78,33 @@ image {
   flex: 1;
 }
 
-.graph {
+.task-completion {
   padding: 0.5rem;
   border: 1px solid #000;
 }
 
-.graph__image {
-  width: 100%;
-  height: auto;
-  max-height: 15rem;
+.task-completion__data {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.task-completion__graph {
+  max-width: 100%;
+  flex: 1;
+}
+
+.task-completion__stats {
+  flex: 1;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-completion__stat {
+  flex: 1;
+  border: 1px solid black;
+  padding: 0.5rem;
 }
 
 .activity {
@@ -107,8 +131,13 @@ image {
   .info-cards {
     flex-direction: row;
   }
+
   .search__input {
     display: block;
+  }
+
+  .task-completion__graph {
+    max-width: 50%;
   }
 }
 
@@ -118,9 +147,9 @@ image {
     grid-template-areas:
       "sidebar header header header header"
       "sidebar main main main main";
-    align-content: stretch;
     grid-template-rows: 1fr 12fr;
-    grid-template-columns: 15rem 1fr;
+    grid-template-columns: 17rem 1fr;
+    gap: 0;
   }
 
   .sidebar {
