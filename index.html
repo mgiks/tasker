@@ -19,8 +19,8 @@
         <span>Username</span>
       </div>
       <nav>
-        <div class="search">
-          <i class="fas fa-magnifying-glass"></i>
+        <div class="search block">
+          <i class="fas fa-magnifying-glass search__icon"></i>
           <input type="search" placeholder="Search" class="search__input" />
         </div>
       </nav>
@@ -38,7 +38,7 @@
       </div>
 
       <div class="sidebar__links">
-        <a class="sidebar__link">
+        <a class="sidebar__link sidebar__link--chosen">
           <i class="fas fa-arrow-trend-up"></i>
           Dashboard
         </a>
@@ -63,49 +63,55 @@
 
     <main class="main">
       <section class="info-cards">
-        <article class="info-card">
+        <article class="info-card block">
           <h2 class="block-title nowrap">Tasks Done</h2>
           <p class="info-card__data">1337</p>
           <p class="info-card__change">+13% this week</p>
         </article>
-        <article class="info-card">
+        <article class="info-card block">
           <h2 class="block-title nowrap">Active Users</h2>
           <p class="info-card__data">505</p>
           <p class="info-card__change">+30 today</p>
         </article>
-        <article class="info-card">
+        <article class="info-card block">
           <h2 class="block-title">Revenue</h2>
           <p class="info-card__data">$4,397</p>
           <p class="info-card__change">+4% since last month</p>
         </article>
       </section>
 
-      <section class="task-completion">
+      <section class="task-completion block">
         <h2 class="block-title">
           Task Completion <i class="nowrap">(Last 7 days)</i>
         </h2>
         <div class="task-completion__data">
-          <div class="task-completion__graph">
+          <div class="task-completion__graph block">
             <canvas id="task-completion-chart"></canvas>
           </div>
           <div class="task-completion__stats">
-            <div class="task-completion-stat">
+            <div class="task-completion-stat block">
               <h3 class="task-completion-stat__title">
                 Average task completion
               </h3>
               <p class="task-completion-stat__data">10</p>
             </div>
-            <div class="task-completion-stat">
+            <div class="task-completion-stat block">
               <h3 class="task-completion-stat__title">
                 Median task completion
               </h3>
               <p class="task-completion-stat__data">7</p>
             </div>
+            <div class="task-completion-stat block">
+              <h3 class="task-completion-stat__title">
+                Range of task completion
+              </h3>
+              <p class="task-completion-stat__data">9</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="activity">
+      <section class="activity block">
         <h2 class="block-title nowrap">Recent Activity</h2>
         <div class="activity__cards">
           <article class="activity-card">

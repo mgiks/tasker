@@ -26,6 +26,11 @@
           display: false,
         },
       },
+      elements: {
+        line: {
+          borderColor: "#ff5964",
+        },
+      },
     },
   });
 })();
