@@ -122,7 +122,19 @@ image {
   border-bottom: 1px solid black;
 }
 
+.activity-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.25rem;
+}
+
 .activity-card__icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid black;
   border-radius: 50%;
 }
