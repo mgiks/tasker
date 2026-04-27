@@ -31,6 +31,10 @@ img {
   font-family: "Outfit", sans-serif;
 }
 
+.sidebar {
+  display: none;
+}
+
 .header {
   display: flex;
   align-items: center;
