@@ -10,47 +10,6 @@
   margin-bottom: 0.25rem;
 }
 
-.page {
-  background-color: var(--BG-COLOR);
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  min-height: 100vh;
-  font-family: "Outfit", sans-serif;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-inline: 0.5rem;
-  grid-area: header;
-  justify-self: center;
-  width: 100%;
-  max-width: 82rem;
-}
-
-.search {
-  display: flex;
-  gap: 0.25rem;
-  height: 2rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.search__icon {
-  color: var(--FG-COLOR);
-}
-
-.search__input {
-  display: none;
-}
-
-.mobile-corner {
-  color: var(--FG-COLOR);
-}
-
 .main {
   display: flex;
   flex-direction: column;
@@ -199,19 +158,6 @@
   .info-cards {
     flex-direction: row;
   }
-
-  .search {
-    border: 1px solid var(--FG-COLOR);
-    padding: 0.5rem;
-  }
-
-  .search__input {
-    background-color: var(--BG-COLOR);
-    color: var(--FG-COLOR);
-    display: block;
-    border: none;
-    outline: none;
-  }
 }
 
 @media screen and (min-width: 769px) {
@@ -221,84 +167,7 @@
 }
 
 @media screen and (min-width: 1025px) {
-  .page {
-    display: grid;
-    grid-template-areas:
-      "sidebar header header header header"
-      "sidebar main main main main";
-    grid-template-rows: 1fr 12fr;
-    grid-template-columns: 17rem 1fr;
-    gap: 1.5rem;
-  }
-
-  .sidebar {
-    display: grid;
-    grid-template-rows: 1fr 12fr;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding-top: 0.5rem;
-    padding-left: 1.5rem;
-    border-right: 1px solid var(--FG-COLOR);
-    color: var(--FG-COLOR);
-    position: fixed;
-    height: 100%;
-    width: 15rem;
-    grid-area: sidebar;
-  }
-
   .task-completion__graph {
     max-width: 50%;
-  }
-
-  .user-info {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.25rem;
-    grid-row: 1 /2;
-  }
-
-  .user-info__icon {
-    border: 1px solid var(--FG-COLOR);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.5rem;
-    width: 2.5rem;
-  }
-
-  .user-info__position {
-    color: var(--GRAY-CONTRAST-COLOR);
-  }
-
-  .sidebar__links {
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    grid-row: 2 / 3;
-  }
-
-  .sidebar__link {
-    font-size: 1.25rem;
-    font-weight: 300;
-    text-decoration: none;
-    color: var(--FG-COLOR);
-  }
-
-  .sidebar__link:hover {
-    color: var(--RED-CONTRAST-COLOR);
-  }
-
-  .sidebar__link--chosen {
-    color: var(--RED-CONTRAST-COLOR);
-  }
-
-  .sidebar__link:hover {
-    cursor: pointer;
-  }
-
-  .mobile-corner {
-    display: none;
   }
 }
