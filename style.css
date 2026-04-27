@@ -21,6 +21,16 @@ image {
   white-space: nowrap;
 }
 
+.block {
+  border-radius: 15px;
+  padding: 0.75rem;
+}
+
+.block-title {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
 .page {
   background-color: var(--BG-COLOR);
   display: flex;
@@ -40,11 +50,6 @@ image {
   justify-self: center;
   width: 100%;
   max-width: 82rem;
-}
-
-.block {
-  border-radius: 15px;
-  padding: 0.75rem;
 }
 
 .search {
@@ -81,27 +86,13 @@ image {
 }
 
 .sidebar {
-  grid-area: sidebar;
   display: none;
-  flex-direction: column;
-  padding-top: 0.5rem;
-  padding-left: 1.5rem;
-  border-right: 1px solid var(--FG-COLOR);
-  color: var(--FG-COLOR);
-  position: fixed;
-  height: 100%;
-  width: 15rem;
 }
 
 .info-cards {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-
-.block-title {
-  font-weight: 500;
-  margin-bottom: 0.25rem;
 }
 
 .info-card {
@@ -118,7 +109,6 @@ image {
 }
 
 .info-card__change {
-  font-size: 1rem;
   opacity: 0.85;
 }
 
@@ -265,8 +255,20 @@ image {
   .sidebar {
     display: grid;
     grid-template-rows: 1fr 12fr;
-    gap: 1.5rem;
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-top: 0.5rem;
+    padding-left: 1.5rem;
+    border-right: 1px solid var(--FG-COLOR);
+    color: var(--FG-COLOR);
+    position: fixed;
+    height: 100%;
+    width: 15rem;
+    grid-area: sidebar;
+  }
+
+  .task-completion__graph {
+    max-width: 50%;
   }
 
   .user-info {
@@ -275,10 +277,6 @@ image {
     align-items: center;
     gap: 0.25rem;
     grid-row: 1 /2;
-  }
-
-  .task-completion__graph {
-    max-width: 50%;
   }
 
   .user-info__icon {
