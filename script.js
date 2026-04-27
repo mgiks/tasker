@@ -46,3 +46,9 @@
     },
   });
 })();
+
+window.addEventListener("resize", () => {
+  for (let id in Chart.instances) {
+    Chart.instances[id].resize();
+  }
+});
