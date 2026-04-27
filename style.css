@@ -303,6 +303,8 @@ img {
   .sidebar__link {
     font-size: 1.25rem;
     font-weight: 300;
+    text-decoration: none;
+    color: var(--FG-COLOR);
   }
 
   .sidebar__link:hover {
