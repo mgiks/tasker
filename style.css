@@ -88,17 +88,16 @@ img {
     grid-template-areas:
       "sidebar header header header header"
       "sidebar main main main main";
-    grid-template-rows: 1fr 12fr;
+    grid-template-rows: 5rem 1fr;
     grid-template-columns: 17rem 1fr;
     gap: 1.5rem;
   }
 
   .sidebar {
     display: grid;
-    grid-template-rows: 1fr 12fr;
+    grid-template-rows: 5rem 1fr;
     grid-template-columns: 1fr;
     gap: 1.5rem;
-    padding-top: 0.5rem;
     padding-left: 1.5rem;
     border-right: 1px solid var(--FG-COLOR);
     color: var(--FG-COLOR);
