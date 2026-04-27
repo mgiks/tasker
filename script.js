@@ -1,12 +1,12 @@
 (async function () {
   const data = [
-    { day: 1, tasks: 3 },
-    { day: 2, tasks: 7 },
-    { day: 3, tasks: 1 },
-    { day: 4, tasks: 8 },
-    { day: 5, tasks: 4 },
-    { day: 6, tasks: 10 },
-    { day: 7, tasks: 2 },
+    { day: "1st day", tasks: 3 },
+    { day: "2nd day", tasks: 7 },
+    { day: "3rd day", tasks: 1 },
+    { day: "4th day", tasks: 8 },
+    { day: "5th day", tasks: 4 },
+    { day: "6th day", tasks: 10 },
+    { day: "7th day", tasks: 2 },
   ];
 
   new Chart(document.getElementById("task-completion-chart"), {
