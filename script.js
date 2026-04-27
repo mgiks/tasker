@@ -23,19 +23,11 @@
     options: {
       scales: {
         x: {
-          title: {
-            display: true,
-            text: "Day",
-          },
           grid: {
             display: false,
           },
         },
         y: {
-          title: {
-            display: true,
-            text: "Tasks Completed",
-          },
           grid: {
             display: false,
           },
