@@ -131,7 +131,7 @@ image {
 
 .task-completion__data {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 1rem;
 }
 
@@ -243,9 +243,11 @@ image {
     border: none;
     outline: none;
   }
+}
 
-  .task-completion__graph {
-    max-width: 50%;
+@media screen and (min-width: 769px) {
+  .task-completion__data {
+    flex-direction: row;
   }
 }
 
@@ -273,6 +275,10 @@ image {
     align-items: center;
     gap: 0.25rem;
     grid-row: 1 /2;
+  }
+
+  .task-completion__graph {
+    max-width: 50%;
   }
 
   .user-info__icon {
