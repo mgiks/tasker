@@ -71,14 +71,6 @@ img {
   max-width: 82rem;
 }
 
-.search {
-  display: flex;
-  gap: 0.25rem;
-  height: 2rem;
-  align-items: center;
-  justify-content: center;
-}
-
 .search__icon {
   color: var(--FG-COLOR);
 }
