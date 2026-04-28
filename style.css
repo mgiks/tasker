@@ -22,7 +22,7 @@ img {
   white-space: nowrap;
 }
 
-.nav-block {
+.header-block {
   display: flex;
   align-items: center;
   justify-content: center;
