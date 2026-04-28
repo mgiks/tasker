@@ -16,12 +16,22 @@
         <i class="fas fa-bars"></i>
         <span>Joe Bloggs</span>
       </div>
-      <nav>
-        <div class="search block">
-          <i class="fas fa-magnifying-glass search__icon"></i>
-          <input type="search" placeholder="Search" class="search__input" />
-        </div>
-      </nav>
+      <div class="header__right">
+        <nav class="nav">
+          <div class="search nav-block">
+            <i class="fas fa-magnifying-glass search__icon"></i>
+            <input type="search" placeholder="Search" class="search__input" />
+          </div>
+        </nav>
+        <button class="filter-button nav-block">
+          <p class="filter-button__text">Status</p>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <button class="new-task-button nav-block">
+          <p class="new-task-button__text">New Task</p>
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
     </header>
 
     <aside class="sidebar">

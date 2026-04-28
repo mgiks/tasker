@@ -1,0 +1,28 @@
+.header__right {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filter-button {
+  background: none;
+}
+
+.filter-button:hover {
+  cursor: pointer;
+}
+
+.filter-button__text {
+  display: none;
+}
+
+.new-task-button {
+  background: none;
+}
+
+.new-task-button:hover {
+  cursor: pointer;
+}
+
+.new-task-button__text {
+  display: none;
+}
