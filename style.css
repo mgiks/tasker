@@ -22,6 +22,17 @@ img {
   white-space: nowrap;
 }
 
+.block {
+  border-radius: 15px;
+  padding: 0.75rem;
+  border: 1px solid var(--FG-COLOR);
+}
+
+.block-title {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
 .page {
   background-color: var(--BG-COLOR);
   display: flex;

@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Outfit:wght@100..900&display=swap");
 
-.block {
-  border-radius: 15px;
-  padding: 0.75rem;
-}
-
-.block-title {
-  font-weight: 500;
-  margin-bottom: 0.25rem;
-}
-
 .main {
   display: flex;
   flex-direction: column;
