@@ -71,6 +71,11 @@ img {
   max-width: 82rem;
 }
 
+.header__right {
+  display: flex;
+  gap: 0.5rem;
+}
+
 .search__icon {
   color: var(--FG-COLOR);
 }
