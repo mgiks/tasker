@@ -35,6 +35,30 @@
   border-radius: 15px;
 }
 
+.task__name {
+  border-bottom: 1px solid var(--FG-COLOR);
+  padding-inline: 0.75rem;
+  padding-block: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.task__status--open {
+  color: #ff5964;
+}
+
+.task__status--in-progress {
+  color: #e3b505;
+}
+
+.task__status--done {
+  color: #7bc950;
+}
+
+.task__time-left {
+  font-style: italic;
+}
+
 .task-row {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -57,22 +81,6 @@
 
 .task-row__data {
   font-weight: 600;
-}
-
-.task__status--open {
-  color: #ff5964;
-}
-
-.task__status--in-progress {
-  color: #e3b505;
-}
-
-.task__status--done {
-  color: #7bc950;
-}
-
-.task__time-left {
-  font-style: italic;
 }
 
 /* 
