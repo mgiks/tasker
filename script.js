@@ -21,6 +21,7 @@
       ],
     },
     options: {
+      maintainAspectRatio: false,
       scales: {
         x: {
           grid: {
