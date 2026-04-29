@@ -137,8 +137,8 @@ img {
   .page {
     display: grid;
     grid-template-areas:
-      "sidebar header header header header"
-      "sidebar main main main main";
+      "sidebar header "
+      "sidebar main";
     grid-template-rows: 5rem 1fr;
     grid-template-columns: 17rem 1fr;
     gap: 1.5rem;
