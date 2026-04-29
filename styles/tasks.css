@@ -83,19 +83,6 @@
   font-weight: 600;
 }
 
-/* 
-.task-table__row {
-  display: flex;
-}
-
-.task-table__header {
-  flex: 1;
-}
-
-.task-table__data {
-  flex: 1;
-} */
-
 @media screen and (min-width: 426px) {
   .search__input {
     max-width: 7rem;
