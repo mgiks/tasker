@@ -111,6 +111,19 @@ img {
   gap: 0.25rem;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-inline: 0.5rem;
+  grid-area: main;
+  justify-self: center;
+  width: 100%;
+  max-width: 82rem;
+  color: var(--FG-COLOR);
+  padding-bottom: 3rem;
+}
+
 @media screen and (min-width: 426px) {
   .search__input {
     background-color: var(--BG-COLOR);
