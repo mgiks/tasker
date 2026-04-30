@@ -23,9 +23,11 @@
 }
 
 .tasks {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
   gap: 1.5rem;
+  justify-items: center;
+  justify-content: center;
 }
 
 .task {
@@ -33,6 +35,7 @@
   flex-direction: column;
   border: 1px solid var(--FG-COLOR);
   border-radius: 15px;
+  width: 18.75rem;
 }
 
 .task__name {
@@ -41,6 +44,7 @@
   padding-block: 0.5rem;
   font-size: 1.25rem;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .task__status--open {
@@ -128,5 +132,12 @@
 
   .new-task-button__text {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .tasks {
+    justify-content: flex-start;
+    justify-items: flex-start;
   }
 }
