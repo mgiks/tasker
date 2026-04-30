@@ -158,7 +158,7 @@ img {
       "sidebar header "
       "sidebar main"
       "sidebar footer";
-    grid-template-rows: 5rem 1fr;
+    grid-template-rows: 5rem min-content min-content;
     grid-template-columns: 15rem 1fr 0;
     gap: 1.5rem;
   }
