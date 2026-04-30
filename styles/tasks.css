@@ -118,6 +118,10 @@
   font-weight: 800;
 }
 
+.paginator__button:hover {
+  cursor: pointer;
+}
+
 .paginator__button--active {
   color: var(--RED-CONTRAST-COLOR);
 }
