@@ -111,6 +111,11 @@ img {
   gap: 0.25rem;
 }
 
+.title {
+  display: flex;
+  justify-content: center;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -229,5 +234,9 @@ img {
 
   .mobile-corner {
     display: none;
+  }
+
+  .title {
+    justify-content: flex-start;
   }
 }
