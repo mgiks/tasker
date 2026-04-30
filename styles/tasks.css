@@ -89,8 +89,11 @@
 
 .footer {
   padding-bottom: 1.5rem;
+  padding-inline: 0.5rem;
   grid-area: footer;
   justify-self: center;
+  max-width: 82rem;
+  width: 100%;
 }
 
 .paginator {
