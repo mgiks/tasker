@@ -121,7 +121,6 @@ img {
   width: 100%;
   max-width: 82rem;
   color: var(--FG-COLOR);
-  padding-bottom: 3rem;
 }
 
 @media screen and (min-width: 426px) {
