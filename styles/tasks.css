@@ -85,6 +85,8 @@
 
 .footer {
   padding-bottom: 1.5rem;
+  grid-area: footer;
+  justify-self: center;
 }
 
 .paginator {
