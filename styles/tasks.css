@@ -77,6 +77,10 @@
   white-space: nowrap;
 }
 
+.task__priority {
+  display: flex;
+}
+
 .task__status--open {
   color: #ff5964;
 }
