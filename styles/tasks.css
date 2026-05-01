@@ -206,6 +206,7 @@
     font-size: 1.25rem;
     font-weight: 400;
     border-right: inherit;
+    border-bottom: inherit;
   }
 
   .task__name:last-of-type {
