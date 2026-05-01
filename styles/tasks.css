@@ -49,7 +49,7 @@
 .tasks-table-row__data {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  gap: 0.1rem;
+  gap: 0.5rem;
   border-bottom: 1px solid var(--FG-COLOR);
   padding-inline: 0.75rem;
   padding-block: 0.5rem;
