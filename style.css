@@ -55,6 +55,7 @@ img {
   gap: 1.5rem;
   min-height: 100vh;
   font-family: "Outfit", sans-serif;
+  padding-bottom: 1.5rem;
 }
 
 .sidebar {
