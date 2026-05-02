@@ -30,7 +30,7 @@
   display: flex;
   flex-direction: column;
   border-radius: 15px;
-  border: 1px solid var(--FG-COLOR);
+  border: var(--BORDER);
   width: 18.75rem;
 }
 
@@ -38,7 +38,7 @@
   display: grid;
   grid-template-columns: 1fr 4fr;
   gap: 0.5rem;
-  border-bottom: 1px solid var(--FG-COLOR);
+  border-bottom: var(--BORDER);
   padding-inline: 0.75rem;
   padding-block: 0.5rem;
   justify-content: center;
@@ -57,7 +57,7 @@
 }
 
 .task__name {
-  border-bottom: 1px solid var(--FG-COLOR);
+  border-bottom: var(--BORDER);
   padding-inline: 0.75rem;
   padding-block: 0.5rem;
   font-size: 1.25rem;
@@ -102,7 +102,7 @@
 
 .paginator__button {
   border-radius: 15px;
-  border: 1px solid var(--FG-COLOR);
+  border: var(--BORDER);
   background: none;
   padding: 0.5rem;
   font-size: 1rem;
@@ -137,7 +137,7 @@
 
 @media screen and (min-width: 1025px) {
   .tasks-table {
-    border: 1px solid var(--FG-COLOR);
+    border: var(--BORDER);
     border-radius: 15px;
   }
 
@@ -151,8 +151,8 @@
 
   .tasks-table-row {
     display: table-row;
-    border-right: 1px solid var(--FG-COLOR);
-    border-bottom: 1px solid var(--FG-COLOR);
+    border-right: var(--BORDER);
+    border-bottom: var(--BORDER);
   }
 
   .tasks-table-row:last-child {
@@ -165,8 +165,8 @@
     padding-inline: 0.75rem;
     padding-block: 0.5rem;
     text-align: start;
-    border-bottom: 1px solid var(--FG-COLOR);
-    border-right: 1px solid var(--FG-COLOR);
+    border-bottom: var(--BORDER);
+    border-right: var(--BORDER);
   }
 
   .tasks-table-row__header:last-child {

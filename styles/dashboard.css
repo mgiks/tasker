@@ -81,7 +81,7 @@
 }
 
 .activity-card {
-  border-bottom: 1px solid var(--FG-COLOR);
+  border-bottom: var(--BORDER);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -105,7 +105,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--FG-COLOR);
+  border: var(--BORDER);
   border-radius: 50%;
 }
 

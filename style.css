@@ -17,6 +17,8 @@ img {
   --RED-CONTRAST-COLOR: #ff5964;
   --LIGHT-GRAY-COLOR: #c4c4c4;
   --GRAY-COLOR: #9a9898;
+
+  --BORDER: 1px solid var(--FG-COLOR);
 }
 
 .nowrap {
@@ -30,7 +32,7 @@ img {
   border-radius: 15px;
   padding-block: 0.5rem;
   padding-inline: 0.75rem;
-  border: 1px solid var(--FG-COLOR);
+  border: var(--BORDER);
   gap: 0.25rem;
   font-size: 0.75rem;
   color: var(--FG-COLOR);
@@ -40,7 +42,7 @@ img {
 .block {
   border-radius: 15px;
   padding: 0.75rem;
-  border: 1px solid var(--FG-COLOR);
+  border: var(--BORDER);
 }
 
 .block-title {
@@ -194,7 +196,7 @@ img {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     padding-left: 1.5rem;
-    border-right: 1px solid var(--FG-COLOR);
+    border-right: var(--BORDER);
     color: var(--FG-COLOR);
     position: fixed;
     height: 100%;
@@ -211,7 +213,7 @@ img {
   }
 
   .user-info__icon {
-    border: 1px solid var(--FG-COLOR);
+    border: var(--BORDER);
     border-radius: 50%;
     display: flex;
     align-items: center;
