@@ -4,6 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tasker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
-  <body></body>
+  <body class="page">
+    <header class="header">
+      <div class="header__left">
+        <div class="mobile-corner">
+          <i class="fas fa-bars"></i>
+          <p class="nowrap">Joe Bloggs</p>
+        </div>
+      </div>
+      <div class="header__right">
+        <nav class="nav">
+          <div class="search header-block">
+            <i class="fas fa-magnifying-glass search__icon"></i>
+            <input type="search" placeholder="Search" class="search__input" />
+          </div>
+        </nav>
+        <button class="new-task-button header-block">
+          <p class="new-task-button__text nowrap">New Task</p>
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
+    </header>
+  </body>
 </html>
