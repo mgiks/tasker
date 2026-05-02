@@ -10,18 +10,6 @@
   display: none;
 }
 
-.new-task-button {
-  background: none;
-}
-
-.new-task-button:hover {
-  cursor: pointer;
-}
-
-.new-task-button__text {
-  display: none;
-}
-
 .tasks-table {
   width: 100%;
 }
@@ -143,10 +131,6 @@
 
 @media screen and (min-width: 592px) {
   .filter-button__text {
-    display: block;
-  }
-
-  .new-task-button__text {
     display: block;
   }
 }

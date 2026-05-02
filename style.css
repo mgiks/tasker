@@ -104,6 +104,18 @@ img {
   display: none;
 }
 
+.new-task-button {
+  background: none;
+}
+
+.new-task-button:hover {
+  cursor: pointer;
+}
+
+.new-task-button__text {
+  display: none;
+}
+
 .mobile-corner {
   display: flex;
   align-items: center;
@@ -143,6 +155,10 @@ img {
 @media screen and (min-width: 592px) {
   .search__input {
     max-width: none;
+  }
+
+  .new-task-button__text {
+    display: block;
   }
 }
 
