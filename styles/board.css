@@ -127,3 +127,15 @@
 .board-task__time-left {
   font-style: italic;
 }
+
+.add-list-button {
+  border: var(--BORDER);
+  border-radius: 15px;
+  height: fit-content;
+  padding-inline: 0.75rem;
+  padding-block: 0.5rem;
+}
+
+.add-list-button:hover {
+  cursor: pointer;
+}
