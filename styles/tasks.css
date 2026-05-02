@@ -196,8 +196,4 @@
     border-right: inherit;
     border-bottom: inherit;
   }
-
-  .task__name:last-of-type {
-    color: red;
-  }
 }
