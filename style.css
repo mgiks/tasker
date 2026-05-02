@@ -1,5 +1,6 @@
 @import "./styles/dashboard.css";
 @import "./styles/tasks.css";
+@import "./styles/board.css";
 
 * {
   margin: 0;
