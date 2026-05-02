@@ -141,6 +141,7 @@ img {
   width: 100%;
   max-width: 82rem;
   color: var(--FG-COLOR);
+  overflow: auto;
 }
 
 @media screen and (min-width: 426px) {
