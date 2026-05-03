@@ -90,14 +90,6 @@ img {
   justify-content: flex-end;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex: 1;
-  max-width: fit-content;
-}
-
 .search__icon {
   color: var(--FG-COLOR);
 }
