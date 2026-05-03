@@ -1,6 +1,6 @@
 .board {
   display: grid;
-  grid-template-columns: repeat(4, minmax(18.75rem, 1fr));
+  grid-template-columns: repeat(4, 18.75rem);
   gap: 2rem;
   overflow-x: scroll;
   scrollbar-width: none;
@@ -24,6 +24,7 @@
   padding-inline: 0.75rem;
   padding-block: 0.5rem;
   font-weight: 500;
+  height: 3rem;
 }
 
 .board-column__title--open {
@@ -53,6 +54,10 @@
   font-size: 1.25rem;
   padding-inline: 0.75rem;
   padding-block: 0.5rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .board-column__add-task-button:hover {
@@ -132,9 +137,15 @@
 .add-list-button {
   border: var(--BORDER);
   border-radius: 15px;
-  height: fit-content;
+  height: 3rem;
   padding-inline: 0.75rem;
   padding-block: 0.5rem;
+  background: none;
+  color: var(--FG-COLOR);
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .add-list-button:hover {
