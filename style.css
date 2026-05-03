@@ -108,10 +108,20 @@ img {
 
 .new-task-button {
   background: none;
+  border: none;
 }
 
 .new-task-button:hover {
   cursor: pointer;
+}
+
+.new-task-button__link {
+  text-decoration: none;
+  color: var(--FG-COLOR);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 .new-task-button__text {
