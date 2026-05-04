@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="header__right">
-        <div class="search header-block">
+        <div class="search">
           <i class="fas fa-magnifying-glass search__icon"></i>
           <input type="search" placeholder="Search" class="search__input" />
         </div>
@@ -64,50 +64,43 @@
     </aside>
 
     <main class="main">
-      <h1 class="title">Dashboard</h1>
+      <h1 class="h1 main__title">Dashboard</h1>
+
       <section class="info-cards">
         <article class="info-card block">
-          <h2 class="block-title">Tasks Done</h2>
+          <h2 class="h2">Tasks Done</h2>
           <p class="info-card__data">1337</p>
-          <p class="info-card__change">+13% this week</p>
+          <p class="meta-info">+13% this week</p>
         </article>
         <article class="info-card block">
-          <h2 class="block-title">Active Users</h2>
+          <h2 class="h2">Active Users</h2>
           <p class="info-card__data">505</p>
-          <p class="info-card__change">+30 today</p>
+          <p class="meta-info">+30 today</p>
         </article>
         <article class="info-card block">
-          <h2 class="block-title">Revenue</h2>
+          <h2 class="h2">Revenue</h2>
           <p class="info-card__data">$4,397</p>
-          <p class="info-card__change">+4% since last month</p>
+          <p class="meta-info">+4% since last month</p>
         </article>
       </section>
 
       <section class="task-completion block">
-        <h2 class="block-title">
-          Task Completion <i class="nowrap">(Last 7 days)</i>
-        </h2>
+        <h2 class="h2">Task Completion <i class="nowrap">(Last 7 days)</i></h2>
         <div class="task-completion__data">
           <div class="task-completion__graph block">
             <canvas id="task-completion-chart"></canvas>
           </div>
           <div class="task-completion__stats">
             <div class="task-completion-stat block">
-              <h3 class="task-completion-stat__title">
-                Average task completion
-              </h3>
+              <h3 class="h3">Average task completion</h3>
               <p class="task-completion-stat__data">10</p>
             </div>
             <div class="task-completion-stat block">
-              <h3 class="task-completion-stat__title">
-                Median task completion
-              </h3>
+              <h3 class="h3">Median task completion</h3>
               <p class="task-completion-stat__data">7</p>
             </div>
             <div class="task-completion-stat block">
-              <h3 class="task-completion-stat__title">
-                Range of task completion
-              </h3>
+              <h3 class="h3">Range of task completion</h3>
               <p class="task-completion-stat__data">9</p>
             </div>
           </div>
@@ -115,7 +108,7 @@
       </section>
 
       <section class="activity block">
-        <h2 class="block-title nowrap">Recent Activity</h2>
+        <h2 class="h2">Recent Activity</h2>
         <div class="activity__cards">
           <article class="activity-card">
             <div class="activity-card__top">
@@ -128,7 +121,7 @@
               </div>
             </div>
             <p class="activity-card__activity">Joined!</p>
-            <p class="activity-card__time">2 min ago</p>
+            <p class="meta-info">2 min ago</p>
           </article>
           <article class="activity-card">
             <div class="activity-card__top">
@@ -141,7 +134,7 @@
               </div>
             </div>
             <p class="activity-card__activity">Completed a task!</p>
-            <p class="activity-card__time">5 min ago</p>
+            <p class="meta-info">5 min ago</p>
           </article>
           <article class="activity-card">
             <div class="activity-card__top">
@@ -154,7 +147,7 @@
               </div>
             </div>
             <p class="activity-card__activity">Is on a streak!</p>
-            <p class="activity-card__time">12 min ago</p>
+            <p class="meta-info">12 min ago</p>
           </article>
         </div>
       </section>

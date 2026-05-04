@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Outfit:wght@100..900&display=swap");
 
+.meta-info {
+  font-size: var(--TEXT-SM);
+  font-weight: var(--FW-MEDIUM);
+  line-height: var(--LH-NORMAL);
+  opacity: 0.85;
+}
+
 .info-cards {
   display: flex;
   flex-direction: column;
@@ -14,18 +21,16 @@
 }
 
 .info-card__data {
-  font-size: 1.25rem;
+  font-size: var(--TEXT-MD);
+  font-weight: var(--FW-REGULAR);
+  line-height: var(--LH-NORMAL);
   color: var(--RED-CONTRAST-COLOR);
-}
-
-.info-card__change {
-  opacity: 0.85;
 }
 
 .task-completion {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 1rem;
 }
 
 .task-completion__data {
@@ -55,23 +60,20 @@
   flex-direction: column;
 }
 
-.task-completion-stat__title {
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-
 .task-completion-stat__data {
   flex: 1;
   display: flex;
   align-items: center;
-  font-size: 1.25rem;
+  font-size: var(--TEXT-MD);
+  font-weight: var(--FW-REGULAR);
+  line-height: var(--LH-NORMAL);
   color: var(--RED-CONTRAST-COLOR);
 }
 
 .activity {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 1rem;
 }
 
 .activity__cards {
@@ -84,7 +86,7 @@
   border-bottom: var(--BORDER);
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.25rem;
   padding-bottom: 0.75rem;
 }
 
@@ -96,7 +98,14 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 0.25rem;
+  gap: 0.3rem;
+  font-size: var(--TEXT-SM);
+  line-height: var(--LH-NORMAL);
+}
+
+.activity-card__position {
+  color: var(--GRAY-COLOR);
+  font-weight: var(--FW-MEDIUM);
 }
 
 .activity-card__icon {
@@ -110,16 +119,10 @@
 }
 
 .activity-card__activity {
-  font-size: 1.25rem;
+  font-size: var(--TEXT-MD);
+  font-weight: var(--FW-REGULAR);
+  line-height: var(--LH-NORMAL);
   color: var(--RED-CONTRAST-COLOR);
-}
-
-.activity-card__position {
-  color: var(--GRAY-COLOR);
-}
-
-.activity-card__time {
-  opacity: 0.85;
 }
 
 @media screen and (min-width: 426px) {
