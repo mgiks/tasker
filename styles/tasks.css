@@ -84,15 +84,6 @@
 .task__time-left {
   font-style: italic;
 }
-
-.footer {
-  padding-inline: 0.5rem;
-  grid-area: footer;
-  justify-self: center;
-  max-width: 82rem;
-  width: 100%;
-}
-
 .paginator {
   display: flex;
   justify-content: center;
