@@ -200,6 +200,12 @@ button {
   line-height: var(--LH-NORMAL);
 }
 
+.mobile-corner__name {
+  font-size: var(--TEXT-MD);
+  font-weight: var(--FW-REGULAR);
+  line-height: var(--LH-NORMAL);
+}
+
 .main {
   display: flex;
   flex-direction: column;
