@@ -159,6 +159,10 @@ button {
   color: var(--FG-COLOR);
 }
 
+.search__icon--small {
+  display: none;
+}
+
 .search__input {
   display: none;
 }
@@ -244,6 +248,14 @@ button {
     padding-block: 0.22rem;
   }
 
+  .search__icon--big {
+    display: none;
+  }
+
+  .search__icon--small {
+    display: block;
+  }
+
   .search__input {
     background-color: var(--BG-COLOR);
     color: var(--FG-COLOR);
@@ -251,7 +263,7 @@ button {
     border: none;
     outline: none;
     max-width: 7rem;
-    font-size: var(--TEXT-SM);
+    font-size: var(--TEXT-XS);
     font-weight: var(--FW-REGULAR);
     line-height: var(--LH-NORMAL);
     position: relative;
