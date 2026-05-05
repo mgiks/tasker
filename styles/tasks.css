@@ -1,15 +1,3 @@
-.filter-button {
-  background: none;
-}
-
-.filter-button:hover {
-  cursor: pointer;
-}
-
-.filter-button__text {
-  display: none;
-}
-
 .tasks-table {
   width: 100%;
 }
@@ -22,7 +10,7 @@
   display: grid;
   justify-content: center;
   justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   gap: 1.5rem;
 }
 
@@ -31,7 +19,6 @@
   flex-direction: column;
   border-radius: 15px;
   border: var(--BORDER);
-  width: 18.75rem;
 }
 
 .tasks-table-row__data {
@@ -43,13 +30,17 @@
   padding-block: 0.5rem;
   justify-content: center;
   align-content: center;
-  font-weight: 600;
+  font-size: var(--TEXT-MD);
+  font-weight: var(--FW-MEDIUM);
+  line-height: var(--LH-NORMAL);
 }
 
 .tasks-table-row__data::before {
   content: attr(data-label);
   color: var(--LIGHT-GRAY-COLOR);
-  font-weight: 400;
+  font-size: var(--TEXT-MD);
+  font-weight: var(--FW-REGULAR);
+  line-height: var(--LH-NORMAL);
 }
 
 .tasks-table-row__data:last-child {
@@ -60,13 +51,14 @@
   border-bottom: var(--BORDER);
   padding-inline: 0.75rem;
   padding-block: 0.5rem;
-  font-size: 1.25rem;
-  font-weight: 500;
-  white-space: nowrap;
+  font-size: var(--TEXT-LG);
+  font-weight: var(--FW-REGULAR);
+  line-height: var(--LH-TIGHT);
 }
 
 .task__priority {
   display: flex;
+  align-items: center;
 }
 
 .task__status--open {
@@ -81,9 +73,6 @@
   color: #7bc950;
 }
 
-.task__time-left {
-  font-style: italic;
-}
 .paginator {
   display: flex;
   justify-content: center;
@@ -92,18 +81,15 @@
 }
 
 .paginator__button {
-  border-radius: 15px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 13px;
   border: var(--BORDER);
   background: none;
-  padding: 0.5rem;
-  font-size: 1rem;
   color: var(--FG-COLOR);
-  width: 2.5rem;
-  height: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
+  font-size: var(--TEXT-MD);
+  font-weight: var(--FW-SEMIBOLD);
+  line-height: var(--LH-NORMAL);
 }
 
 .paginator__button:hover {
@@ -165,7 +151,7 @@
   }
 
   .tasks-table-row__data {
-    font-size: 1.25rem;
+    font-size: var(--TEXT-MD);
     display: table-cell;
     border-bottom: inherit;
     border-right: inherit;
@@ -182,7 +168,7 @@
   }
 
   .task__name {
-    font-size: 1.25rem;
+    font-size: var(--TEXT-MD);
     font-weight: 400;
     border-right: inherit;
     border-bottom: inherit;

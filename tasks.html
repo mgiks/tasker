@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,22 +15,37 @@
       <div class="header__left">
         <div class="mobile-corner">
           <i class="fas fa-bars"></i>
-          <p class="nowrap">Joe Bloggs</p>
+          <p class="mobile-corner__name nowrap">Joe Bloggs</p>
         </div>
       </div>
       <div class="header__right">
-        <div class="search header-block">
-          <i class="fas fa-magnifying-glass search__icon"></i>
+        <div class="search">
+          <div class="search__icon search__big-icon">
+            <i class="fas fa-magnifying-glass"></i>
+          </div>
+          <div class="search__icon search__small-icon">
+            <i class="fas fa-magnifying-glass fa-xs"></i>
+          </div>
           <input type="search" placeholder="Search" class="search__input" />
         </div>
-        <button class="filter-button header-block">
+        <button class="filter-button">
           <p class="filter-button__text">Status</p>
-          <i class="fas fa-chevron-down"></i>
+          <div class="filter-button__icon filter-button__big-icon">
+            <i class="fas fa-filter fa-lg"></i>
+          </div>
+          <div class="filter-button__icon filter-button__small-icon">
+            <i class="fas fa-filter"></i>
+          </div>
         </button>
         <button class="new-task-button">
-          <a href="create-task.html" class="new-task-button__link header-block">
+          <a href="create-task.html" class="new-task-button__link">
             <p class="new-task-button__text nowrap">New Task</p>
-            <i class="fas fa-plus"></i>
+            <div class="new-task-button__icon new-task-button__big-icon">
+              <i class="fas fa-plus fa-lg"></i>
+            </div>
+            <div class="new-task-button__icon new-task-button__small-icon">
+              <i class="fas fa-plus"></i>
+            </div>
           </a>
         </button>
       </div>
@@ -42,13 +57,13 @@
           <i class="fas fa-user"></i>
         </div>
         <div class="user-info__text">
-          <p>Joe Bloggs</p>
-          <p class="user-info__position">CEO</p>
+          <p class="user-info__name">Joe Bloggs</p>
+          <p class="user-info__job-title">CEO</p>
         </div>
       </div>
 
       <nav class="sidebar__links">
-        <a href="index.html" class="sidebar__link">
+        <a href="#" class="sidebar__link">
           <i class="fas fa-arrow-trend-up"></i>
           Dashboard
         </a>
@@ -72,7 +87,8 @@
     </aside>
 
     <main class="main">
-      <h1 class="title">Tasks</h1>
+      <h1 class="h1 main__title">Tasks</h1>
+
       <section class="tasks">
         <table class="tasks-table">
           <thead class="tasks-table__head">
@@ -99,10 +115,8 @@
                 Open
               </td>
               <td data-label="Due" class="tasks-table-row__data">
-                <span
-                  >June 21
-                  <span class="task__time-left">(18 days from now)</span></span
-                >
+                <span>June 21 <span class="task__time-left"
+                  >(18 days from now)</span></span>
               </td>
             </tr>
 
@@ -121,10 +135,8 @@
                 Open
               </td>
               <td data-label="Due" class="tasks-table-row__data">
-                <span
-                  >August 1
-                  <span class="task__time-left">(59 days from now)</span></span
-                >
+                <span>August 1
+                  <span class="task__time-left">(59 days from now)</span></span>
               </td>
             </tr>
 
@@ -143,10 +155,8 @@
                 Open
               </td>
               <td data-label="Due" class="tasks-table-row__data">
-                <span
-                  >August 4
-                  <span class="task__time-left">(62 days from now)</span></span
-                >
+                <span>August 4
+                  <span class="task__time-left">(62 days from now)</span></span>
               </td>
             </tr>
 
@@ -165,10 +175,8 @@
                 Open
               </td>
               <td data-label="Due" class="tasks-table-row__data">
-                <span
-                  >August 15
-                  <span class="task__time-left">(73 days from now)</span></span
-                >
+                <span>August 15
+                  <span class="task__time-left">(73 days from now)</span></span>
               </td>
             </tr>
 
@@ -187,10 +195,8 @@
                 Open
               </td>
               <td data-label="Due" class="tasks-table-row__data">
-                <span
-                  >August 20
-                  <span class="task__time-left">(78 days from now)</span></span
-                >
+                <span>August 20
+                  <span class="task__time-left">(78 days from now)</span></span>
               </td>
             </tr>
 
@@ -209,10 +215,8 @@
                 Open
               </td>
               <td data-label="Due" class="tasks-table-row__data">
-                <span
-                  >July 25
-                  <span class="task__time-left">(52 days from now)</span></span
-                >
+                <span>July 25
+                  <span class="task__time-left">(52 days from now)</span></span>
               </td>
             </tr>
 
@@ -231,10 +235,8 @@
                 Open
               </td>
               <td data-label="Due" class="tasks-table-row__data">
-                <span
-                  >July 18
-                  <span class="task__time-left">(45 days from now)</span></span
-                >
+                <span>July 18
+                  <span class="task__time-left">(45 days from now)</span></span>
               </td>
             </tr>
 
@@ -253,10 +255,8 @@
                 Open
               </td>
               <td data-label="Due" class="tasks-table-row__data">
-                <span
-                  >August 25
-                  <span class="task__time-left">(83 days from now)</span></span
-                >
+                <span>August 25
+                  <span class="task__time-left">(83 days from now)</span></span>
               </td>
             </tr>
 
@@ -275,10 +275,8 @@
                 In progress
               </td>
               <td data-label="Due" class="tasks-table-row__data">
-                <span
-                  >July 1
-                  <span class="task__time-left">(28 days from now)</span></span
-                >
+                <span>July 1
+                  <span class="task__time-left">(28 days from now)</span></span>
               </td>
             </tr>
 
@@ -297,10 +295,8 @@
                 In progress
               </td>
               <td data-label="Due" class="tasks-table-row__data">
-                <span
-                  >July 14
-                  <span class="task__time-left">(41 days from now)</span></span
-                >
+                <span>July 14
+                  <span class="task__time-left">(41 days from now)</span></span>
               </td>
             </tr>
 
@@ -319,10 +315,8 @@
                 In progress
               </td>
               <td data-label="Due" class="tasks-table-row__data">
-                <span
-                  >July 22
-                  <span class="task__time-left">(49 days from now)</span></span
-                >
+                <span>July 22
+                  <span class="task__time-left">(49 days from now)</span></span>
               </td>
             </tr>
 
@@ -341,10 +335,8 @@
                 In progress
               </td>
               <td data-label="Due" class="tasks-table-row__data">
-                <span
-                  >July 28
-                  <span class="task__time-left">(55 days from now)</span></span
-                >
+                <span>July 28
+                  <span class="task__time-left">(55 days from now)</span></span>
               </td>
             </tr>
 
@@ -363,10 +355,8 @@
                 In progress
               </td>
               <td data-label="Due" class="tasks-table-row__data">
-                <span
-                  >August 8
-                  <span class="task__time-left">(66 days from now)</span></span
-                >
+                <span>August 8
+                  <span class="task__time-left">(66 days from now)</span></span>
               </td>
             </tr>
 
@@ -385,10 +375,8 @@
                 In progress
               </td>
               <td data-label="Due" class="tasks-table-row__data">
-                <span
-                  >July 30
-                  <span class="task__time-left">(57 days from now)</span></span
-                >
+                <span>July 30
+                  <span class="task__time-left">(57 days from now)</span></span>
               </td>
             </tr>
 
@@ -407,10 +395,8 @@
                 In progress
               </td>
               <td data-label="Due" class="tasks-table-row__data">
-                <span
-                  >August 5
-                  <span class="task__time-left">(63 days from now)</span></span
-                >
+                <span>August 5
+                  <span class="task__time-left">(63 days from now)</span></span>
               </td>
             </tr>
 
@@ -429,10 +415,8 @@
                 In progress
               </td>
               <td data-label="Due" class="tasks-table-row__data">
-                <span
-                  >August 12
-                  <span class="task__time-left">(70 days from now)</span></span
-                >
+                <span>August 12
+                  <span class="task__time-left">(70 days from now)</span></span>
               </td>
             </tr>
 
@@ -451,10 +435,8 @@
                 In progress
               </td>
               <td data-label="Due" class="tasks-table-row__data">
-                <span
-                  >July 26
-                  <span class="task__time-left">(53 days from now)</span></span
-                >
+                <span>July 26
+                  <span class="task__time-left">(53 days from now)</span></span>
               </td>
             </tr>
 
@@ -473,10 +455,8 @@
                 In progress
               </td>
               <td data-label="Due" class="tasks-table-row__data">
-                <span
-                  >August 18
-                  <span class="task__time-left">(76 days from now)</span></span
-                >
+                <span>August 18
+                  <span class="task__time-left">(76 days from now)</span></span>
               </td>
             </tr>
 
@@ -495,10 +475,8 @@
                 Done
               </td>
               <td data-label="Due" class="tasks-table-row__data">
-                <span
-                  >August 10
-                  <span class="task__time-left">(68 days from now)</span></span
-                >
+                <span>August 10
+                  <span class="task__time-left">(68 days from now)</span></span>
               </td>
             </tr>
 
@@ -517,10 +495,8 @@
                 Done
               </td>
               <td data-label="Due" class="tasks-table-row__data">
-                <span
-                  >June 27
-                  <span class="task__time-left">(24 days from now)</span></span
-                >
+                <span>June 27
+                  <span class="task__time-left">(24 days from now)</span></span>
               </td>
             </tr>
           </tbody>
