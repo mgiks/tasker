@@ -94,30 +94,6 @@
   border-bottom: none;
 }
 
-.activity-card__top {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 0.3rem;
-  font-size: var(--TEXT-SM);
-  line-height: var(--LH-NORMAL);
-}
-
-.activity-card__position {
-  color: var(--GRAY-COLOR);
-  font-weight: var(--FW-MEDIUM);
-}
-
-.activity-card__icon {
-  width: 2.5rem;
-  height: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: var(--BORDER);
-  border-radius: 50%;
-}
-
 .activity-card__activity {
   font-size: var(--TEXT-MD);
   font-weight: var(--FW-REGULAR);

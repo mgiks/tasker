@@ -45,6 +45,45 @@ button {
   white-space: nowrap;
 }
 
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.3rem;
+  font-size: var(--TEXT-SM);
+  font-weight: var(--FW-REGULAR);
+  line-height: var(--LH-NORMAL);
+}
+
+.user-info__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--BORDER);
+  border-radius: 50%;
+}
+
+.user-info__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user-info__name {
+  font-size: var(--TEXT-SM);
+  font-weight: var(--FW-REGULAR);
+  line-height: var(--LH-NORMAL);
+}
+
+.user-info__job-title {
+  color: var(--GRAY-COLOR);
+  font-size: var(--TEXT-SM);
+  font-weight: var(--FW-SEMIBOLD);
+  line-height: var(--LH-NORMAL);
+}
+
 .header-block {
   display: flex;
   align-items: center;
@@ -110,9 +149,10 @@ button {
 }
 
 .search {
-  font-size: var(--TEXT-MD);
-  font-weight: var(--FW-REGULAR);
-  line-height: var(--LH-NORMAL);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 .search__icon {
@@ -197,6 +237,13 @@ button {
 }
 
 @media screen and (min-width: 426px) {
+  .search {
+    border: var(--BORDER);
+    border-radius: 15px;
+    padding-inline: 0.5rem;
+    padding-block: 0.22rem;
+  }
+
   .search__input {
     background-color: var(--BG-COLOR);
     color: var(--FG-COLOR);
@@ -204,7 +251,14 @@ button {
     border: none;
     outline: none;
     max-width: 7rem;
-    font-size: var(--TEXT-SIZE);
+    font-size: var(--TEXT-SM);
+    font-weight: var(--FW-REGULAR);
+    line-height: var(--LH-NORMAL);
+    position: relative;
+  }
+
+  .search__input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
   }
 }
 
@@ -259,32 +313,6 @@ button {
     background-color: var(--BG-COLOR);
   }
 
-  .user-info {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.25rem;
-    grid-row: 1 /2;
-  }
-
-  .user-info__icon {
-    border: var(--BORDER);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.5rem;
-    width: 2.5rem;
-  }
-
-  .user-info__text {
-    font-size: var(--TEXT-SM);
-  }
-
-  .user-info__position {
-    color: var(--GRAY-COLOR);
-  }
-
   .sidebar__links {
     display: flex;
     gap: 1rem;
@@ -294,7 +322,8 @@ button {
 
   .sidebar__link {
     font-size: var(--TEXT-MD);
-    font-weight: 300;
+    font-weight: var(--FW-REGULAR);
+    line-height: var(--LH-NORMAL);
     text-decoration: none;
     color: var(--FG-COLOR);
   }
