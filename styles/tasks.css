@@ -110,7 +110,7 @@
   width: 2rem;
   height: 2rem;
   border-radius: 13px;
-  border: var(--BORDER);
+  border: none;
   background: none;
   color: var(--FG-COLOR);
   font-size: var(--TEXT-MD);
@@ -120,6 +120,7 @@
 
 .paginator__button:hover {
   cursor: pointer;
+  color: var(--RED-CONTRAST-COLOR);
 }
 
 .paginator__button--active {
