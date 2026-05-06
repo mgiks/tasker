@@ -10,7 +10,7 @@
   display: grid;
   justify-content: center;
   justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 18.75rem));
   gap: 1.5rem;
 }
 
@@ -52,6 +52,7 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(4, auto);
+  width: 100%;
 }
 
 .task__name {
