@@ -331,6 +331,20 @@ button {
     position: relative;
   }
 
+  .search__input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+}
+
+@media screen and (min-width: 592px) {
+  .search__input {
+    max-width: none;
+  }
+
+  .new-task-button__text {
+    display: block;
+  }
+
   .filter-button {
     border: var(--BORDER);
     border-radius: 15px;
@@ -385,20 +399,6 @@ button {
     font-weight: var(--FW-REGULAR);
     line-height: var(--LH-NORMAL);
     position: relative;
-  }
-
-  .search__input::-webkit-search-cancel-button {
-    -webkit-appearance: none;
-  }
-}
-
-@media screen and (min-width: 592px) {
-  .search__input {
-    max-width: none;
-  }
-
-  .new-task-button__text {
-    display: block;
   }
 }
 
