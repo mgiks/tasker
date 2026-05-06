@@ -164,8 +164,9 @@
   }
 
   .tasks-table-row__header {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: var(--TEXT-LG);
+    font-weight: var(--FW-MEDIUM);
+    line-height: var(--LH-TIGHT);
     padding-inline: 0.75rem;
     padding-block: 0.5rem;
     text-align: start;
@@ -178,11 +179,10 @@
   }
 
   .tasks-table-row__data {
-    font-size: var(--TEXT-MD);
     display: table-cell;
     border-bottom: inherit;
     border-right: inherit;
-    font-weight: 400;
+    font-weight: var(--FW-REGULAR);
   }
 
   .tasks-table-row__data::before {
@@ -196,7 +196,6 @@
 
   .task__name {
     font-size: var(--TEXT-MD);
-    font-weight: 400;
     border-right: inherit;
     border-bottom: inherit;
   }
