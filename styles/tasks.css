@@ -23,7 +23,8 @@
 
 .tasks-table-row__data {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
   gap: 0.5rem;
   border-bottom: var(--BORDER);
   padding-inline: 0.75rem;
@@ -47,6 +48,12 @@
   border-bottom: none;
 }
 
+.task {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(4, auto);
+}
+
 .task__name {
   border-bottom: var(--BORDER);
   padding-inline: 0.75rem;
@@ -54,11 +61,24 @@
   font-size: var(--TEXT-LG);
   font-weight: var(--FW-REGULAR);
   line-height: var(--LH-TIGHT);
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
 }
 
 .task__priority {
+  grid-row: 2 / 3;
+  grid-column: 1 / 3;
+}
+
+.task__priority-data {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+}
+
+.task__status {
+  grid-row: 3 / 4;
+  grid-column: 1 / 3;
 }
 
 .task__status--open {
@@ -71,6 +91,11 @@
 
 .task__status--done {
   color: #7bc950;
+}
+
+.task__due {
+  grid-row: 4 / 5;
+  grid-column: 1 / 3;
 }
 
 .paginator {
