@@ -1,3 +1,164 @@
-.back-button {
+.task-creation-section {
+  display: flex;
+  justify-content: center;
+}
+
+.task-form {
+  border: var(--BORDER);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 35rem;
+}
+
+.task-form__text-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.task-form__fieldset {
+  padding-inline: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: none;
+}
+
+.task-form__fieldset:first-child {
+  padding-bottom: 0;
+}
+
+.task-form__fieldset:nth-child(2) {
+  padding-bottom: 1.5rem;
+}
+
+.task-form__clickable {
+  padding-block: 0.3rem;
+  padding-inline: 0.5rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-family: "Outfit", sans-serif;
+  font-size: var(--TEXT-MD);
+  font-weight: var(--FW-REGULAR);
+  line-height: var(--LH-NORMAL);
+}
+
+.task-form-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.task-form-field__name {
+  font-size: var(--TEXT-LG);
+  font-weight: var(--FW-REGULAR);
+  line-height: var(--LH-LOOSE);
+}
+
+.task-form-field__input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: none;
+  border: var(--BORDER);
+  color: var(--FG-COLOR);
+  flex: 1;
+}
+
+.task-form__selections {
+  display: grid;
+  grid-template-areas:
+    "due due"
+    "priority status";
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  grid-template-rows: repeat(2, 1fr);
+  border: none;
+}
+
+.task-form__priority-field {
+  grid-area: priority;
+}
+
+.task-form__status-field {
+  grid-area: status;
+}
+
+.task-form__due-field {
+  grid-area: due;
+  position: relative;
+  display: inline-block;
+}
+
+.task-form__buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: var(--BORDER);
+  padding-top: 1rem;
+}
+
+.task-form__button {
+  font-size: var(--TEXT-LG);
+  font-weight: var(--FW-MEDIUM);
+  line-height: var(--LH-NORMAL);
+  flex: 1;
+  background: none;
+  color: var(--FG-COLOR);
+  border: var(--BORDER);
+}
+
+.task-form__button:hover {
+  cursor: pointer;
+}
+
+.task-form__due-name {
+  position: absolute;
+}
+
+.datepicker {
+  position: relative;
+  height: 2rem;
+}
+
+.datepicker__input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: none;
+  color: var(--FG-COLOR);
+  border: none;
+}
+
+@supports selector(::-webkit-calendar-picker-indicator) {
+  .datepicker__input {
+    cursor: pointer;
+  }
+
+  .datepicker__input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .datepicker-toggle-button {
+    position: absolute;
+    right: 0;
+    top: 0.25rem;
+    width: 2rem;
+    height: 100%;
+    background-image: url("../images/calendar2.svg");
+    background-repeat: no-repeat;
+  }
 }

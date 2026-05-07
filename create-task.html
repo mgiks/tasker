@@ -10,20 +10,21 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
   </head>
-  <body class="page">
+  <body class="page page--padded">
     <header class="header">
       <div class="header__left">
         <div class="mobile-corner">
           <i class="fas fa-bars"></i>
-          <p class="nowrap">Joe Bloggs</p>
+          <p class="mobile-corner__name nowrap">Joe Bloggs</p>
         </div>
       </div>
       <div class="header__right">
-        <button class="back-button header-block">
+        <button class="back-button">
           <i class="fas fa-arrow-left-long"></i>
           <p>Back</p>
         </button>
-        <div class="save-status header-block">
+        <div class="save-status">
+          <p>Saved</p>
           <i class="fas fa-check"></i>
         </div>
       </div>
@@ -63,5 +64,94 @@
         </a>
       </nav>
     </aside>
+
+    <main class="main">
+      <h1 class="h1 main__title">Create Task</h1>
+
+      <section class="task-creation-section">
+        <form class="task-form">
+          <fieldset class="task-form__fieldset task-form__text-inputs">
+            <div class="task-form-field">
+              <label for="task-title" class="task-form-field__name"
+                >Title:</label
+              >
+              <input
+                type="text"
+                id="task-title"
+                name="task_title"
+                class="task-form__clickable task-form-field__input"
+              />
+            </div>
+            <div class="task-form-field">
+              <label for="task-description" class="task-form-field__name"
+                >Description:</label
+              >
+              <textarea
+                id="task-description"
+                name="task_description"
+                rows="4"
+                cols="1"
+                class="task-form__clickable task-form-field__input"
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset class="task-form__fieldset task-form__selections">
+            <div class="task-form-field task-form__due-field">
+              <label for="due" class="task-form-field__name">Due:</label>
+              <div
+                class="task-form__clickable task-form-field__input datepicker"
+              >
+                <span class="datepicker-toggle-button"></span>
+                <input
+                  type="date"
+                  id="due"
+                  name="due"
+                  class="task-form__clickable task-form-field__input task-form__due-input datepicker__input"
+                />
+              </div>
+            </div>
+            <div class="task-form-field task-form__priority-field">
+              <label for="priority" class="task-form-field__name"
+                >Priority:</label
+              >
+              <select
+                id="priority"
+                name="priority"
+                class="task-form__clickable task-form-field__input"
+              >
+                <option value="1">Lowest</option>
+                <option value="2" selected>Middle</option>
+                <option value="3">Highest</option>
+              </select>
+            </div>
+            <div class="task-form-field task-form__status-field">
+              <label for="status" class="task-form-field__name">Status:</label>
+              <select
+                id="status"
+                name="status"
+                class="task-form__clickable task-form-field__input"
+              >
+                <option value="open">Open</option>
+                <option value="open">In progress</option>
+                <option value="open">Closed</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset class="task-form__fieldset task-form__buttons">
+            <button
+              type="submit"
+              class="task-form__clickable task-form__button"
+            >
+              Create
+            </button>
+            <button type="reset" class="task-form__clickable task-form__button">
+              Reset
+            </button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
