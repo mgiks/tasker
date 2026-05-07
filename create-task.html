@@ -118,11 +118,13 @@
               <select
                 id="priority"
                 name="priority"
-                class="task-form__clickable task-form-field__input"
+                class="task-form__clickable task-form-field__input selector"
               >
-                <option value="1">Lowest</option>
-                <option value="2" selected>Middle</option>
-                <option value="3">Highest</option>
+                <option value="1" class="selector__item">Lowest</option>
+                <option value="2" class="selector__item" selected>
+                  Middle
+                </option>
+                <option value="3" class="selector__item">Highest</option>
               </select>
             </div>
             <div class="task-form-field task-form__status-field">
@@ -130,11 +132,11 @@
               <select
                 id="status"
                 name="status"
-                class="task-form__clickable task-form-field__input"
+                class="task-form__clickable task-form-field__input selector"
               >
-                <option value="open">Open</option>
-                <option value="open">In progress</option>
-                <option value="open">Closed</option>
+                <option value="open" class="selector__item">Open</option>
+                <option value="open" class="selector__item">In progress</option>
+                <option value="open" class="selector__item">Closed</option>
               </select>
             </div>
           </fieldset>
