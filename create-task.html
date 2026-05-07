@@ -20,13 +20,16 @@
       </div>
       <div class="header__right">
         <button class="back-button">
-          <i class="fas fa-arrow-left-long"></i>
-          <p>Back</p>
+          <a href="javascript:history.back()" class="back-button__link">
+            <div class="back-button__icon back-button__big-icon">
+              <i class="fas fa-arrow-left-long fa-lg"></i>
+            </div>
+            <div class="back-button__icon back-button__small-icon">
+              <i class="fas fa-arrow-left-long fa-sm"></i>
+            </div>
+            <p class="back-button__text">Back</p>
+          </a>
         </button>
-        <div class="save-status">
-          <p>Saved</p>
-          <i class="fas fa-check"></i>
-        </div>
       </div>
     </header>
 

@@ -222,6 +222,39 @@ button {
   display: none;
 }
 
+.back-button {
+  background: none;
+  border: none;
+}
+
+.back-button__link {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--FG-COLOR);
+  font-size: var(--TEXT-MD);
+  font-weight: var(--FW-REGULAR);
+  line-height: var(--LH-NORMAL);
+}
+
+.back-button:hover {
+  cursor: pointer;
+}
+
+.back-button__icon {
+  color: var(--FG-COLOR);
+}
+
+.back-button__small-icon {
+  display: none;
+}
+
+.back-button__text {
+  display: none;
+}
+
 .mobile-corner {
   display: flex;
   align-items: center;
@@ -323,6 +356,34 @@ button {
 
   .search__input::-webkit-search-cancel-button {
     -webkit-appearance: none;
+  }
+
+  .back-button {
+    border: var(--BORDER);
+    border-radius: 15px;
+    padding-inline: 0.5rem;
+    padding-block: 0.22rem;
+  }
+
+  .back-button__big-icon {
+    display: none;
+  }
+
+  .back-button__small-icon {
+    display: block;
+  }
+
+  .back-button__text {
+    background-color: var(--BG-COLOR);
+    color: var(--FG-COLOR);
+    display: block;
+    border: none;
+    outline: none;
+    max-width: 7rem;
+    font-size: var(--TEXT-XS);
+    font-weight: var(--FW-REGULAR);
+    line-height: var(--LH-NORMAL);
+    position: relative;
   }
 }
 
