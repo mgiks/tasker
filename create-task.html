@@ -118,7 +118,7 @@
               <select
                 id="priority"
                 name="priority"
-                class="task-form__clickable task-form-field__input selector"
+                class="task-form__clickable task-form__pointerable task-form-field__input selector"
               >
                 <option value="1" class="selector__item">Lowest</option>
                 <option value="2" class="selector__item" selected>
@@ -132,7 +132,7 @@
               <select
                 id="status"
                 name="status"
-                class="task-form__clickable task-form-field__input selector"
+                class="task-form__clickable task-form__pointerable task-form-field__input selector"
               >
                 <option value="open" class="selector__item">Open</option>
                 <option value="open" class="selector__item">In progress</option>
@@ -144,11 +144,14 @@
           <fieldset class="task-form__fieldset task-form__buttons">
             <button
               type="submit"
-              class="task-form__clickable task-form__button"
+              class="task-form__clickable task-form__pointerable task-form__button"
             >
               Create
             </button>
-            <button type="reset" class="task-form__clickable task-form__button">
+            <button
+              type="reset"
+              class="task-form__clickable task-form__pointerable task-form__button"
+            >
               Reset
             </button>
           </fieldset>

@@ -45,6 +45,10 @@
   line-height: var(--LH-NORMAL);
 }
 
+.task-form__pointerable:hover {
+  cursor: pointer;
+}
+
 .selector__item {
   background: var(--BG-COLOR);
 }
@@ -113,10 +117,6 @@
   background: none;
   color: var(--FG-COLOR);
   border: var(--BORDER);
-}
-
-.task-form__button:hover {
-  cursor: pointer;
 }
 
 .task-form__due-name {
