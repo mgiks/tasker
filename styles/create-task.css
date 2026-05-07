@@ -166,3 +166,10 @@
     background-repeat: no-repeat;
   }
 }
+
+@media screen and (min-width: 1025px) {
+  .task-creation-section {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
