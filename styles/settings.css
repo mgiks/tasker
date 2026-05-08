@@ -11,9 +11,9 @@
   font-size: var(--TEXT-MD);
   font-weight: var(--FW-MEDIUM);
   line-height: var(--LH-NORMAL);
-  width: 50%;
   padding-inline: 1rem;
   padding-block: 0.5rem;
+  grid-column: 1 / -1;
 }
 
 .settings__button:hover {
@@ -43,7 +43,10 @@
   border: var(--BORDER);
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-inline: 0.25rem;
+  align-self: center;
+  height: 1.5rem;
 }
 
 .settings-toggle__checkbox {
@@ -91,7 +94,7 @@
   max-width: 35rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 1.5rem;
+  row-gap: 1.5rem;
 }
 
 .settings-section {
