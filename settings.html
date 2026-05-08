@@ -57,15 +57,106 @@
           <i class="fas fa-note-sticky"></i>
           Board
         </a>
-        <a href="create-task.html" class="sidebar__link" ">
+        <a href="create-task.html" class="sidebar__link">
           <i class="fas fa-square-plus"></i>
           Create Task
         </a>
-        <a href="#" class="sidebar__link  sidebar__link--chosen">
+        <a href="#" class="sidebar__link sidebar__link--chosen">
           <i class="fas fa-gear"></i>
           Settings
         </a>
       </nav>
     </aside>
+
+    <main class="main">
+      <h1 class="h1 main__title">Settings</h1>
+      <section class="settings">
+        <div class="settings-sections">
+          <section class="settings-section">
+            <h2 class="h2 settings-section__name">Appearance</h2>
+
+            <div class="block settings-section__options">
+              <div class="setting">
+                <p class="setting__name">Theme</p>
+                <div class="setting__setter">
+                  <select class="selector settings__selector">
+                    <option selected class="selector__item">Dark</option>
+                    <option class="selector__item">Light</option>
+                  </select>
+                </div>
+              </div>
+              <div class="setting">
+                <p class="setting__name">Compact mode</p>
+                <div class="settings-toggle">
+                  <input type="checkbox" class="settings-toggle__checkbox" />
+                </div>
+              </div>
+              <div class="setting">
+                <p class="setting__name">Accent color</p>
+                <div class="setting__setter">
+                  <select class="selector settings__selector">
+                    <option selected class="selector__item">Red</option>
+                    <option class="selector__item">Blue</option>
+                    <option class="selector__item">Green</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="settings-section">
+            <h2 class="h2 settings-section__name">Notifications</h2>
+
+            <div class="block settings-section__options">
+              <div class="setting">
+                <p class="setting__name">Email notifications</p>
+                <div class="settings-toggle">
+                  <input type="checkbox" class="settings-toggle__checkbox" />
+                </div>
+              </div>
+              <div class="setting">
+                <p class="setting__name">Weekly reports</p>
+                <div class="settings-toggle">
+                  <input type="checkbox" class="settings-toggle__checkbox" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="settings-section">
+            <h2 class="h2 settings-section__name">Account</h2>
+
+            <div class="block settings-section__options">
+              <div class="setting">
+                <p class="setting__name">Name</p>
+                <div class="setting__setter">
+                  <p>Joe Blogs</p>
+                  <div class="pen-icon">
+                    <i class="fas fa-pen fa-xs"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="setting">
+                <p class="setting__name">Email</p>
+                <div class="setting__setter">
+                  <p>example@mail.com</p>
+                  <div class="pen-icon">
+                    <i class="fas fa-pen fa-xs"></i>
+                  </div>
+                </div>
+              </div>
+              <button class="settings__button">Change password</button>
+            </div>
+          </section>
+
+          <section class="settings-section">
+            <h2 class="h2 settings-section__name">Danger zone</h2>
+            <div class="block settings-section__options">
+              <button class="settings__button">Delete account</button>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

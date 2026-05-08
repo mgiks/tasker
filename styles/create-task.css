@@ -49,10 +49,6 @@
   cursor: pointer;
 }
 
-.selector__item {
-  background: var(--BG-COLOR);
-}
-
 .task-form-field {
   display: flex;
   flex-direction: column;
